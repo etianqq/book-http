@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * 进阶篇
+* 进阶篇
 * [基础篇](basic.md)
    * [TCP/IP](basic_tcpip.md)
    * [URI和URL](basic_uri_url.md)
