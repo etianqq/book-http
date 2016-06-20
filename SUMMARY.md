@@ -16,5 +16,5 @@
        * [WEB攻击](senior_web_attack.md)
    * [实战篇](practice.md)
        * [CORS](practice_cors.md)
-       * 资源缓存
+       * [资源缓存](practice_web_cache.md)
 
