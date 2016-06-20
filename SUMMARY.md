@@ -15,4 +15,5 @@
        * 追加协议
        * WEB攻击
    * [实战篇](practice.md)
+       * CORS
 
