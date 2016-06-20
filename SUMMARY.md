@@ -15,6 +15,6 @@
        * [追加协议](senior_additional_protocol.md)
        * [WEB攻击](senior_web_attack.md)
    * [实战篇](practice.md)
-       * CORS
+       * [CORS](practice_cors.md)
        * 资源缓存
 
