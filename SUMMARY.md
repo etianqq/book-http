@@ -6,4 +6,5 @@
    * URI和URL
    * HTTP协议
    * HTTP报文
+   * 状态码
 
