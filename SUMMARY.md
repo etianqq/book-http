@@ -17,5 +17,5 @@
    * [实战篇](practice.md)
        * [CORS](practice_cors.md)
        * [资源缓存](practice_web_cache.md)
-       * 编码
+       * [编码](practice_encode.md)
 
