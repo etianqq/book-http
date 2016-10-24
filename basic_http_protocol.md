@@ -18,3 +18,8 @@ HTTP是不保存状态的协议。
 
 HTTP/1.1中，所有默认连接都是持久连接。
 
+####使用cookie的状态管理
+Cookie会根据从serve发送的response报文内的Set-Cookie首部字段信息，通知客户端保存cookie。
+
+当下次客户端再次往该server发送请求时，客户端会自动在request报文中加入Cookie值，然后发送。
+
