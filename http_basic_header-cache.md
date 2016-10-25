@@ -1,2 +1,6 @@
 # http报文中与缓存相关的首部字段
 
+![](http-cache-detail.png)
+
+
+
