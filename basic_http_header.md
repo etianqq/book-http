@@ -7,9 +7,17 @@ HTTP首部字段根据实际用途分为4种类型：
 4. 实体首部字段：针对request和response报文的实体部门使用的首部
 
 下面的首部字段是在工作中用的过的：
-####1. Authorization
+
+####请求首部字段
+#####1. Authorization 
 告知服务器，用户代理的认证信息（证书值）。
 
 应用场景：需要传token信息，或者类似的认证信息（比如App H5页面使用的ak）
 ![](http-header-authorization.png)
+
+#####2.If-Match(请求首部字段)
+和ETag搭配使用，处理资源缓存。
+
+只有If-Match和ETag值匹配一致时，服务器才会接受请求。
+
 
