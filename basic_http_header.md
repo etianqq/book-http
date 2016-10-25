@@ -18,12 +18,14 @@ HTTP首部字段根据实际用途分为4种类型：
 #####2.If-Match(请求首部字段)
 和ETag搭配使用，处理资源缓存。
 
-只有If-Match和ETag值匹配一致时，服务器才会接受请求。
+只有If-Match和ETag值匹配**一致**时，服务器才会接受请求。
 
-#####3.If-Modified-Since
+#####3.If-None-Match
+只有在If-None-Match和ETag值匹配**不一致**时，服务器才会接受请求。与If-Match首部字段作用相反。
+
+#####4.If-Modified-Since
 该字段指定日期时间后，资源发生了更新，服务器会接受请求。
 
-#####4.If-None-Match
 
 
 
