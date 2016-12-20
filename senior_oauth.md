@@ -9,6 +9,7 @@
 * cookies是stateful
 * 不需要前端存储
 * 有CSRF(跨站点伪造请求)风险
+* 移动端用在使用cookie时有各种不便利和局限
 
 认证信息在服务端和客户端都需要存储（通常情况下）。服务端通过reponse: ```Set-Cookie```头信息为客户端设置cookie。
 ![](/assets/response-set-cookie.png)
@@ -18,5 +19,13 @@
 如果是跨域，jsonp请求默认挂cookie，CORS要特殊处理。
 
 ####Tokens
+* Token是stateless
+* 需要前端存储(建议用```localstorage```)
+* 无CSRF风险
+* 适合移动端身份认证
+
+
+
+
 
 
