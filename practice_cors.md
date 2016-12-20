@@ -29,5 +29,32 @@ Note: 这些跨站请求与以往浏览器发出的跨站请求并无异同。
 * 请求以 GET, HEAD 或者 POST 以外的方法发起请求。或者，使用 POST，但请求数据为 application/x-www-form-urlencoded, multipart/form-data 或者 text/plain 以外的数据类型。比如说，用 POST 发送数据类型为 application/xml 或者 text/xml 的 XML 数据的请求。
 * 使用自定义请求头（比如添加诸如 X-PINGOTHER）
 
-####3.附带凭证信息的请求
+####3.附带凭证信息的请求(support cookies)
+如果request请求要支持HTTP Cookies和验证信息，那么，```XMLHttpRequest```需要将```withCredentials ```属性设置为```true```，而response需要返回```Access-Control-Allow-Credentials: true```。
 
+前端代码：
+```
+// JS
+var invocation = new XMLHttpRequest();
+var url = 'http://bar.other/resources/credentialed-content/';
+    
+function callOtherDomain(){
+  if(invocation) {
+    invocation.open('GET', url, true);
+    invocation.withCredentials = true;   // 设置
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+  }
+  
+// JQuery
+ $.ajax({
+   ...
+   url: a_cross_domain_url,
+   xhrFields: {
+      withCredentials: true
+   }
+ });  
+```
+
+Response:
+![](/assets/cors-cookies.png)    
