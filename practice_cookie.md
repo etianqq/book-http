@@ -10,7 +10,5 @@
 | 设置 | 否 |是 |
 | 不设置 | 是 | 是 |
 
-如果cookie是服务端通过Set-Cookies方式添加的，那么，无论是否设置httponly属性，客户端都无法通过js代码清除session cookie。 （我的理解对吗？？？？？）
-
 ![](httponly.png)
 
