@@ -10,6 +10,7 @@
 * 不需要前端存储
 * 有CSRF(跨站点伪造请求)风险
 * 移动端用在使用cookie时有各种不便利和局限
+* Cookie可以在同一域名下或者同一主域不同子域下共享，一旦跨主域，就无法共享
 
 认证信息在服务端和客户端都需要存储（通常情况下）。服务端通过reponse: ```Set-Cookie```头信息为客户端设置cookie。
 ![](/assets/response-set-cookie.png)
@@ -23,8 +24,26 @@
 * 需要前端存储(建议用```localstorage```)
 * 无CSRF风险
 * 适合移动端身份认证
+* token支持各类跨域
 
+前端代码：
+```
+// JS
+var res = new XMLHttpRequest();
+...
+req.setRequestHeader('Authorization',accesstoken);
+  
+// JQuery
+$.ajax({
+   url: api,
+   type: "GET",
+   headers: { "Authorization": "Bearer " + token}
+})
+  
+```
+HTTP请求
 
+![](/assets/token-request.png)
 
 
 
