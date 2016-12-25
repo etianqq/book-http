@@ -58,3 +58,17 @@ function callOtherDomain(){
 
 Response:
 ![](/assets/cors-cookies.png)    
+
+####4.HTTP 响应头
+
+#####(1)Access-Control-Allow-Origin
+```
+Access-Control-Allow-Origin: <origin> | *
+```
+origin参数指定一个允许向该服务器提交请求的URI。对于一个**不带有credentials的请求**,可以指定为'*',表示允许来自所有域的请求。
+
+还可以指定具体的域，比如:
+```
+Access-Control-Allow-Origin: http://mozilla.com
+```
+如果服务器端指定了域名,而不是'*',那么响应头的Vary值里必须包含Origin.它告诉客户端: 响应是根据请求头里的Origin的值来返回不同的内容的。
