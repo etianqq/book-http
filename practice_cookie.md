@@ -35,12 +35,18 @@ max-age属性值：
 
 这样服务器就将cookie限制在了特定的域中。
 
-#####3.secure属性
+#####3.path属性
+
+通过这个属性可以为服务器上的特定文档指定cookie。
+
+如果没有设置path，就将其设置为生成set-cookie响应的url的路径。
+
+#####4.secure属性
 一个布尔值。
 
 如果包含这个属性，就只有在HTTP使用SSL安全连接时才能发送cookie。
 
-#####4.HttpOnly属性
+#####5.HttpOnly属性
 
 HttpOnly 属性限制了 cookie 对 HTTP 请求的作用范围。特别的，该属性指示用户代理忽略那些通过“非 HTTP” 方式对 cookie 的访问（比如js的接口）。
 
