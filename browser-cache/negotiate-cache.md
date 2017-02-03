@@ -10,5 +10,5 @@
 
 ![](/assets/negotiate-cache-reponse.png)
 
-**协商缓存是利用的是【Last-Modified，If-Modified-Since】和【ETag、If-None-Match】这两对Header来管理的**
+**协商缓存是利用的是【Last-Modified，If-Modified-Since】或者【ETag、If-None-Match】这两对Header来管理的**
 
