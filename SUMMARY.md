@@ -23,6 +23,7 @@
         * [Expires](browser-cache/hard-cache/expires.md)
         * [cache-control:max-age](browser-cache/hard-cache/cache-controlmax-age.md)
       * [协商缓存](browser-cache/negotiate-cache.md)
+        * [Last-Modified,If-Modified-Since](browser-cache/negotiate-cache/last-modifiedif-modified-since.md)
         * [ETag, If-None-Match](browser-cache/negotiate-cache/etag-if-none-match.md)
       * [tips:Cache-Control](browser-cache/tipscache-control.md)
   * [实战篇](practice.md)
