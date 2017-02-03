@@ -11,14 +11,6 @@
 
 强缓存是利用```Expires```或者```Cache-Control```这两个http response essay-header实现的，它们都用来表示资源在客户端缓存的有效期。
 
-#####1.```Expires``` response header
-
-
-```
-#####2.```Cache-Control``` response header
-
-
-
 ####管理强缓存
 
 #####1.在web服务器上配置，或者通过代码方式，在web服务器返回响应中配置。
