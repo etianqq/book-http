@@ -30,7 +30,7 @@ Expires是http1.0提出的一个表示资源过期时间的essay-header，它描
 由于它是服务器返回的一个绝对时间，在服务器时间与客户端时间相差较大时，缓存管理容易出现问题。
 比如随意修改下客户端时间，就能影响缓存命中的结果。
 ```
-#####1.```Cache-Control``` response header
+#####2.```Cache-Control``` response header
 
 http1.1的时候，提出了一个新的essay-header，就是Cache-Control，这是一个相对时间，在配置缓存的时候，以秒为单位，用数值表示，如：Cache-Control:max-age=315360000，它的缓存原理是：
 
@@ -54,3 +54,19 @@ Cache-Control描述的是一个相对时间，在进行缓存命中的时候，�
 注意
 如果同时启用Expires和Cache-Control， Cache-Control优先级高于Expires。
 ```
+![](/assets/expires-response3.png)
+
+####管理强缓存
+
+#####1.在web服务器上配置，或者通过代码方式，在web服务器返回响应中配置。
+
+#####2. 清除强缓存
+
+1. ctrl+F5
+2. 浏览器隐身模式
+3. chrome在network标签下禁止缓存
+
+![](/assets/chrome-disable-cache.png)
+4. 在开发阶段，给资源加上一个动态的参数，如css/index.css?v=0.0001，由于每次资源的修改都要更新引用的位置，同时修改参数的值。
+5. 如果缓存问题出现在ajax请求中，最有效的解决办法就是ajax的请求地址追加随机数；
+6. 如果资源引用的页面，被嵌入到了一个iframe里面，可以在iframe的区域右键单击```重新加载该页面```
