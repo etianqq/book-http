@@ -20,6 +20,8 @@
       * [CSRF](csrf.md)
     * [浏览器缓存](browser-cache.md)
       * [强缓存](browser-cache/hard-cache.md)
+        * [Expires](browser-cache/hard-cache/expires.md)
+        * Cache-Control\(max-age\)
       * [协商缓存](browser-cache/negotiate-cache.md)
         * [ETag, If-None-Match](browser-cache/negotiate-cache/etag-if-none-match.md)
         * [tips:Cache-Control](browser-cache/negotiate-cache/cache-control.md)
