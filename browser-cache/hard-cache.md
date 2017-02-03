@@ -13,7 +13,7 @@
 
 #####1.```Expires``` response header
 
-Expires是http1.0提出的一个表示资源过期时间的essay-header，它描述的是一个绝对时间，由服务器返回，用GMT格式的字符串表示，如：Expires:Thu, 31 Dec 2037 23:55:55 GMT，它的缓存原理是:
+Expires是***http1.0***提出的一个表示资源过期时间的essay-header，它描述的是一个绝对时间，由服务器返回，用GMT格式的字符串表示，如：Expires:Thu, 31 Dec 2037 23:55:55 GMT，它的缓存原理是:
 
 1. 浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone header加上Expires属性，如：
 
@@ -32,7 +32,7 @@ Expires是http1.0提出的一个表示资源过期时间的essay-header，它描
 ```
 #####2.```Cache-Control``` response header
 
-http1.1的时候，提出了一个新的essay-header，就是Cache-Control，这是一个相对时间，在配置缓存的时候，以秒为单位，用数值表示，如：Cache-Control:max-age=315360000，它的缓存原理是：
+***http1.1***的时候，提出了一个新的essay-header，就是Cache-Control，这是一个相对时间，在配置缓存的时候，以秒为单位，用数值表示，如：Cache-Control:max-age=315360000，它的缓存原理是：
 
 1. 浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone header加上Cache-Control属性，如：
 
