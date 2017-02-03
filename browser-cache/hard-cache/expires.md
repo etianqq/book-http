@@ -5,11 +5,8 @@ Expires是***http1.0***提出的一个表示资源过期时间的essay-header，
 1. 浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone header加上Expires属性，如：
 
 ![](/assets/expires-response1.png)
-
 2. 浏览器在接收到这个资源后，会把这个资源连同所有response header一起缓存下来；
-
 3. 浏览器再请求这个资源时，先从缓存中寻找，找到这个资源后，拿出它的Expires跟当前的请求时间比较，如果请求时间在Expires指定的时间之前，就能命中缓存，否则就不行。
-
 4. 如果缓存没有命中，浏览器直接从服务器加载资源时，Expires Header在重新加载的时候会被更新。
 
 ```
