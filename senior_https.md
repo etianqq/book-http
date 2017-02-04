@@ -14,3 +14,9 @@ HTTPS其实是有两部分组成：**HTTP + SSL / TLS**，也就是在HTTP上又
 **https采用共享密钥加密和公开密钥加密两者并用的混合加密机制**
 
 ![](/assets/https-crpt.png)
+
+####数字证书
+
+证书的一个作用是用来证明作为通信乙方的服务器是否规范,另外一个作用就是确认对方服务器背后运营的企业是否真实存在.拥有该特性的证书就是EV SSL证书(extended validation SSL certificate)
+
+![](/assets/certificate.png)
