@@ -14,6 +14,7 @@
       * [缓存相关的首部字段](http_basic_header-cache.md)
   * [进阶篇](senior.md)
     * [HTTPS](senior_https.md)
+      * [HTTP 缺点](senior_https/http-shortcoming.md)
     * [身份认证](senior_oauth.md)
     * [追加协议](senior_additional_protocol.md)
     * [WEB攻击](senior_web_attack.md)
