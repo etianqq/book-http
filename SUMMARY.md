@@ -12,6 +12,7 @@
       * [请求首部字段](basic_http_header_request.md)
       * [响应首部字段](basic_http_header_response.md)
       * [缓存相关的首部字段](http_basic_header-cache.md)
+    * [持久连接](everlasting-connection.md)
   * [进阶篇](senior.md)
     * [HTTPS](senior_https.md)
       * [HTTP 缺点](senior_https/http-shortcoming.md)
