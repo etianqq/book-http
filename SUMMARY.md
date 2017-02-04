@@ -15,6 +15,7 @@
   * [进阶篇](senior.md)
     * [HTTPS](senior_https.md)
       * [HTTP 缺点](senior_https/http-shortcoming.md)
+      * [https 加密,解密,验证](senior_https/https-crpt.md)
     * [身份认证](senior_oauth.md)
     * [追加协议](senior_additional_protocol.md)
     * [WEB攻击](senior_web_attack.md)
