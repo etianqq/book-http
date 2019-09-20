@@ -1,7 +1,7 @@
 #ETag, If-None-Match
 
 
-![](/cache2.png)
+![](/assets/cache2.png)
 
 1. 浏览器第一次跟服务器请求一个资源，服务器在返回这个资源的同时，在respone header加上ETag。
 ```
@@ -15,7 +15,7 @@ ETag是服务器根据当前请求的资源生成的一个唯一标识。
 如果有变化，就正常返回资源内容。
 与Last-Modified不一样的是，当服务器返回304 Not Modified的响应时，由于ETag重新生成过，response header中还会把这个ETag返回，即使这个ETag跟之前的没有变化。
 
-![](/cache3.png)
+![](/assets/cache3.png)
 
 如上例中所示，在使用了If-None-Match之后，服务器只需要很小的响应就可以达到相同的结果，从而优化了性能。
 

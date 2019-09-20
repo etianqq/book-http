@@ -30,5 +30,5 @@ Cache-Control中设置的常用指令。
 
 怎样决定一个资源的Cache-Control策略呢？下面这个流程图，可以帮到你。
 
-![](/cache4.png)
+![](/assets/cache4.png)
 

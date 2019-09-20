@@ -9,4 +9,4 @@ URL是URI的子集
 * URL(Uniform resource locator)：统一资源定位符
   * 表示资源的地点
 
-![](uri.jpg)
+![](/assets/uri.jpg)

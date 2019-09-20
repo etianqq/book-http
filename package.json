@@ -1,0 +1,28 @@
+{
+  "name": "book-http",
+  "version": "1.0.0",
+  "description": "http training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node_modules/.bin/gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etianqq/book-http.git"
+  },
+  "keywords": [
+    "http",
+    "js"
+  ],
+  "author": "etianqq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etianqq/book-http/issues"
+  },
+  "homepage": "https://github.com/etianqq/book-http#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}

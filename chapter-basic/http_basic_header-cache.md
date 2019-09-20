@@ -1,6 +1,6 @@
 # http报文中与缓存相关的首部字段
 
-![](http-cache-detail.png)
+![](/assets/http-cache-detail.png)
 
 #####1.If-Match(请求首部字段)
 和ETag搭配使用，处理资源缓存。

@@ -57,5 +57,5 @@ HttpOnly 属性限制了 cookie 对 HTTP 请求的作用范围。特别的，该
 | 设置 | 否 |是 |
 | 不设置 | 是 | 是 |
 
-![](httponly.png)
+![](/assets/httponly.png)
 
