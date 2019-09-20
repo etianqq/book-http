@@ -33,4 +33,3 @@
   * [编码](chapter-practice/practice_encode.md)
   * [Cookie](chapter-practice/practice_cookie.md)
   * [使用Fiddler](chapter-practice/practice_use_fiddler.md)
-  * [资源缓存](chapter-practice/web-cache.md)
