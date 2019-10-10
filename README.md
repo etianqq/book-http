@@ -7,13 +7,6 @@ HTTP基本概念和应用
 
 Gitbook: [https://etianqq.github.io/book-http/](https://etianqq.github.io/book-http/)
 
-其他书籍：
-
-* [Javascript简明讲义](https://etianqq.github.io/book-jstips/)
-* [Node讲义](https://etianqq.github.io/book-node/)
-* [Angular 1.0讲义](https://etianqq.github.io/book-angular/)
-* [VUE2.0讲义](https://etianqq.github.io/book-vue2/)
-
 #### Debug
 
 * `gitbook build`
