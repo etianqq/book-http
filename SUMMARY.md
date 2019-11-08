@@ -14,6 +14,7 @@
     * [缓存相关的首部字段](chapter-basic/http_basic_header-cache.md)
   * [持久连接](chapter-basic/everlasting-connection.md)
 * [进阶篇](senior.md)
+  * [HTTP 2.0](chapter-senior/senior_https/HTTP2.0.md)
   * [HTTPS](chapter-senior/senior_https/senior_https.md)
     * [HTTP 缺点](chapter-senior/senior_https/http-shortcoming.md)
     * [https 通信步骤](chapter-senior/senior_https/https-crpt.md)
